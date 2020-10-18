@@ -1,0 +1,98 @@
+<ion-content class="ion-padding-start ion-padding-end">
+  <ion-col>
+    <ion-item class="ion-text-center" lines="none" detail [routerLink]="['/policies']">
+      <ion-label class="coverage">
+        Coverage from 4 Policies
+      </ion-label>
+    </ion-item>
+  </ion-col>
+  <!-- <ion-row>
+    <ion-col size="6">
+      <div class="ion-text-center ">
+        <img src="../../../assets/img/heart.png"> <br>
+        <span class="title">Life</span>
+        <br>
+        <span>HKD 6,146,066</span>
+      </div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="ion-text-center ">
+        <img src="../../../assets/img/dr.png"> <br>
+        <span class="title">Critical Illness</span>
+        <br>
+        <span>up to HKD 1,000,000*</span> </div>
+    </ion-col>
+  </ion-row>
+
+  <ion-row class="ion-margin-top">
+    <ion-col size="6">
+      <div class="ion-text-center ">
+        <img src="../../../assets/img/hosp.png"> <br>
+        <span class="title">Medical & Hosp.</span>
+        <br>
+        <span>up to: HKD 721, 800/year, HKD 6000,000 disability</span></div>
+    </ion-col>
+    <ion-col size="6">
+      <div class="ion-text-center ">
+        <img src="../../../assets/img/ambulance.png"> <br>
+        <span class="title">Accident</span>
+        <br>
+        <span>up tp HKD 1,000,000</span></div>
+    </ion-col>
+  </ion-row> -->
+  
+  <ion-row [ngClass]="{'ion-margin-top': i != 0}" *ngFor="let main of main_policy; let i = index">
+    <ion-col size="6" *ngFor="let main_item of main">
+      <div class="ion-text-center">
+        <img src="{{main_item.img}}"> <br>
+        <span class="title">{{main_item.name}}</span>
+        <br>
+        <span>{{main_item.value}}</span></div>
+    </ion-col>
+  </ion-row>
+  <ion-col>
+      <div class="ion-text-center ">
+      <span class="small">
+        *Additional coverages detailed in provision
+      </span>
+      </div>
+  </ion-col>
+
+  
+
+</ion-content>
+<ion-footer class="ion-no-border">
+  <div class="assetbox">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="6">
+            <span class="assets">
+              Assets
+            </span>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          <span>
+            Total 
+          </span>
+          <span class="total">
+            {{total}}
+          </span>
+        </ion-col>
+      </ion-row>
+      <hr color="dark">
+      <ion-row *ngFor="let asset of assets">
+        <ion-col size="6">
+          <span>
+            {{asset.name}}
+          </span>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end">
+          
+          <span class="total">
+            {{asset.amount}}
+          </span>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-footer>

@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "name": "Life",
+        "value": "HKD 6,146,066",
+        "img": "../../../assets/img/heart.png"
+    },
+    {
+        "id": 2,
+        "name": "Critical Illness",
+        "value": "up to HKD 1,000,000*",
+        "img": "../../../assets/img/dr.png"
+    },
+    {
+        "id": 3,
+        "name": "Medical & Hoop.",
+        "value": "up to HKD 721,800/year, HKD 6,000,000 disability",
+        "img": "../../../assets/img/hosp.png"
+    },
+    {
+        "id": 4,
+        "name": "Accident",
+        "value": "up to HKD 1,000,000",
+        "img": "../../../assets/img/ambulance.png"
+    }
+]

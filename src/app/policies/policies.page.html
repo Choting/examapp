@@ -1,0 +1,71 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar color="warning" mode="ios">
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>All Policies</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<ion-card class="ion-no-padding " [ngClass]="{'notice' : policy.notice!=''}" *ngFor="let policy of policies; let i = index">
+  <ion-card-content class="ion-no-padding"> 
+    <ion-grid>
+      <ion-row>
+        <span class="name">
+          {{policy.name}}
+        </span>
+      </ion-row>
+      <ion-row class="ion-margin-bottom">
+        <ion-col class="ion-no-padding">
+          <ion-item detail class="ion-no-padding ion-no-margin" lines="none">
+            <div>
+              <ion-label class="policy-status">
+                Policy no: {{policy.policy_number}}
+              </ion-label>
+              <ion-label class="policy-status">
+                Status: {{policy.status}}
+              </ion-label>
+            </div>
+          </ion-item>
+        </ion-col>
+      </ion-row>
+      <ion-row *ngFor="let item of policies[i].items">
+        <ion-col size="6" class="ion-no-padding">
+          <span class="items">
+            {{item.title}}
+          </span>
+        </ion-col>
+        <ion-col size="6" class="ion-text-end ion-no-padding ">
+          <div class="div-value">
+            <span class="value items">
+              {{item.value}}
+            </span>
+          </div>
+        </ion-col>
+      </ion-row>
+      
+    </ion-grid>
+    <ion-row *ngIf="policy.notice!=''"class="notice nomargin ion-no-padding">
+      <ion-col class="ion-text-center sign nomargin ion-no-padding" size="1" >
+          <span>!</span>
+      </ion-col>
+      <ion-col aria-setsize="11" class="message ion-no-padding">
+        Premium of HKD 1,280.90 due in 3 days
+      </ion-col>
+    </ion-row>
+    <!-- <div class="notice">
+      <div class="sign">
+        <span>!</span>
+      </div>
+      <div  class="message">
+        <span>
+          Premium of HKD 1,280.90 due in 3 days
+        </span>
+      </div>
+    </div> -->
+    
+  </ion-card-content>
+  
+</ion-card>
+</ion-content>

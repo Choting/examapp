@@ -1,0 +1,53 @@
+[
+    {
+        "id": 1,
+        "name": "Move value from one policy to another",
+        "icon": "pricetags-outline",
+        "items": [
+            {
+                "id": 1,
+                "name": "Pay with policy value"
+            },{
+                "id": 2,
+                "name": "Standing Instructions"
+            }
+        ]
+
+    },
+    {
+        "id": 2,
+        "name": "Cash out your policy values",
+        "icon": "receipt-outline",
+        "items": [
+            {
+                "id": 3,
+                "name": "Pay with policy value"
+            },{
+                "id": 4,
+                "name": "Payout Method"
+            }
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Take a loan against you policy value",
+        "icon": "receipt-outline",
+        "items": [
+            {
+                "id": 5,
+                "name": "Loans"
+            }
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Payments option for your premiums",
+        "icon": "reader-outline",
+        "items": [
+            {
+                "id": 6,
+                "name": "Premium payment method"
+            }
+        ]
+    }
+]

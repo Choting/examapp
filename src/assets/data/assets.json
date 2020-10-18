@@ -1,0 +1,15 @@
+{
+    "assets":[
+        {
+            "id": 1,
+            "name": "Invest-Link",
+            "amount": "HKD 10,539"
+        },
+        {
+            "id": 2,
+            "name": "Savings",
+            "amount": "HKD 161,688"
+        }
+    ],
+    "total": "HKD 255,309"
+}

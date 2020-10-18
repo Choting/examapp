@@ -1,0 +1,45 @@
+<ion-header class="ion-no-border header">
+  <ion-toolbar color="primary">
+    <ion-buttons [routerLink]="['/main/dashboard']" slot="start">
+      <ion-button>
+        <ion-icon size="large" color="dark" slot="icon-only" name="reorder-two-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-buttons slot="end">
+      <ion-button class="badge-button">
+        <ion-badge class="badge" color="warning">5</ion-badge>
+        <ion-icon class="badge-one" size="large" slot="icon-only" color="dark" name="notifications-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+  <ion-avatar class="image-center">
+    <img src="{{image}}">
+  </ion-avatar>
+  <div class="ion-text-center">
+    <h1 class="tag">
+      {{tag}}
+    </h1>
+    <h3 class="ion-no-margin name">
+      {{name}}
+    </h3>
+  </div>
+  <div class="shape">
+    <ion-segment layout="label-hide">
+      <ion-segment-button value="funds">
+        <ion-label class="ion-text-wrap">Manage ILAS Funds</ion-label>
+        <ion-icon name="wallet-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button value="claims">
+        <ion-label class="ion-text-wrap">Claims</ion-label>
+        <ion-icon name="newspaper-outline"></ion-icon>
+      </ion-segment-button>
+      <ion-segment-button (click)="redirectPage('main/policy-servicing')" value="policy">
+        <ion-label class="ion-text-wrap">Policy Servicing</ion-label>
+        <ion-icon name="document-outline"></ion-icon>
+      </ion-segment-button>
+    </ion-segment>
+  </div>
+</ion-header>
+<ion-content>
+  <ion-router-outlet id="main"></ion-router-outlet>
+</ion-content>

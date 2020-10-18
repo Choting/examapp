@@ -1,0 +1,16 @@
+
+<ion-content>
+    <ion-card *ngFor="let service of services">
+        <ion-card-content>
+            <ion-item lines="none">
+                <ion-icon slot="start" [name]="service.icon"></ion-icon>
+                <ion-label class="ion-text-wrap name">{{service.name}}</ion-label>
+              </ion-item>
+              <ion-item *ngFor="let item of service.items" detail lines="none">
+                <ion-icon slot="start"></ion-icon>
+                <ion-label class="item">{{item.name}}</ion-label>
+              </ion-item>
+        </ion-card-content>
+        
+    </ion-card>
+</ion-content>

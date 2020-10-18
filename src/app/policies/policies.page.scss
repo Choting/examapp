@@ -1,0 +1,53 @@
+.name{
+    font-size: 20px;
+    color: #3880ff;
+    font-weight: bolder;
+}
+.policy-status{
+    color: #00091a;
+    font-size: 16px;
+}
+.div-value{
+    height: 100%;  
+}
+.value{
+    // vertical-align: baseline;
+    position: absolute;
+    bottom:0;
+    bottom: 0;
+    right: 0;
+}
+.items{
+    font-size: 16px;
+}
+.notice{
+    border: 1px solid  rgb(234, 171, 0);
+    padding: 0;
+  
+}
+.nomargin{
+    margin-left: -1px;
+    margin-right: -1px;
+    margin-bottom: -1px;
+}
+.sign{
+    
+    background-color: rgb(234, 171, 0);
+    color: cornsilk;
+    font-size: 26px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    
+.message{
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    color: rgb(234, 171, 0);
+    font-size: 16px;
+    font-weight: bold;
+}

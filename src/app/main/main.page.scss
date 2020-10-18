@@ -1,0 +1,115 @@
+.badge-one {
+    position: absolute;
+    top: 0px;
+    right: 5px;
+    font-size: 0.6em;
+    --padding-start: 5px;
+    --padding-end: 5px;
+  }
+  .image-center{
+  
+    position: absolute;
+    z-index: 9999;
+    left: 50%;
+    top: 50%;
+    top: 25%;
+    transform: translate(-50%, -50%);
+    }
+  .ion-no-border{
+    text-align: center;
+    border-bottom-right-radius: 1em;
+    border-bottom-left-radius: 1em;
+  }
+  .badge-two {
+    position: absolute;
+    top: 0px;
+    right: -5px;
+    font-size: 0.6em;
+    --padding-start: 3px;
+    --padding-end: 3px;
+  }
+  .badge{
+    color: aliceblue;
+    background: hsl(0, 94%, 51%);
+    border-radius: 50%;
+    opacity: 0.9;
+    
+  }
+  .tag{
+      font-family: 'Tangerine';
+      margin-top: 50px;
+      color: rgb(0, 17, 32);
+      font-weight: bold;
+      text-shadow: 0px 2px 2px rgb(236, 236, 236);
+  }
+  .name{
+    color: rgb(0, 17, 32);
+    // text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+    font-family: 'theboldfont';
+  }
+     
+  ion-toolbar {
+    --background: transparent;
+    --ion-color-base: transparent !important;
+    }
+.no-transform{
+    text-transform:none;
+}
+.header{
+    background-image: linear-gradient(rgb(252, 202, 6), rgba(255, 255, 255, 0));
+}
+.segment{
+    border-radius: 50% 50% 50% 50% / 50px;
+    background-image: linear-gradient(rgba(252, 203, 6, 0.562), rgb(252, 202, 6));
+    margin-top: 10px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+}
+
+
+.shape {
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+    padding-bottom: 10px;
+    box-shadow: 0px -1px 2px rgba(150, 150, 150, .50);
+  }
+  
+  .shape::before {
+
+    border-radius: 100%;
+    position: absolute;
+    background-image: linear-gradient(rgba(252, 203, 6, 0.562), rgb(252, 202, 6));
+    right: -200px;
+    left: -200px;
+    top: -200px;
+    bottom: 0;
+    content: '';
+  }
+  
+      
+  //   }
+  // }
+  // ion-segment{
+   
+  // }
+  ion-segment-button{
+    --indicator-box-shadow: transparent!important;
+    --border-style: none;
+    --color: rgba(29, 29, 29, 0.733) !important;
+    --color-checked:  rgb(9, 0, 22) !important;
+    --indicator-color : transparent!important; /* this solution */
+    --color-focused: transparent!important;
+    --background-focused: transparent!important;
+    --background-checked: transparent!important;
+    --background-focused-opacity: 0;
+    --background-hover: transparent !important;
+    --margin-bottom: 5px;
+    text-transform:none;
+    font-size: 16px;
+    font-weight: bold;
+    --ripple-color: transparent;
+  }
+  
+
+

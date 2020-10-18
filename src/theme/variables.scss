@@ -76,6 +76,21 @@
   --ion-color-light-tint: #f5f6f9;
 }
 
+@font-face {
+  font-family: 'Tangerine';
+  src: url('../assets/fonts/Tangerine-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'theboldfont';
+  src: url('../assets/fonts/theboldfont.ttf');
+}
+
+// * {
+//   font-family: 'Tangerine';
+// }
+
+
 @media (prefers-color-scheme: dark) {
   /*
    * Dark Colors
